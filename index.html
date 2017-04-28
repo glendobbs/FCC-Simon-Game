@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="src/styles/style.css">
+  </head>
+  <body>
+    <div id="container">
+      <div id="green" class="top-left color"></div>
+      <div id="blue" class="top-right color"></div>
+      <div id="pink" class="bottom-left color"></div>
+      <div id="yellow" class="bottom-right color"></div>
+      <div class="center-circle">
+        <h1 id="name">Simon<span id="regmark">®</span></h1>
+        <h1 id="screen" class="screen-off">--</h1>
+        <button id="start" class="btn btn-default btn-circle"></button>
+        <button id="reset" class="btn btn-default btn-circle"></button>
+        <button id="strict" class="btn btn-default btn-circle"></button>
+        <br>
+        <p class="button-labels">Start</p>
+        <p class="button-labels">Reset</p>
+        <p class="button-labels">Strict</p>
+        <span id="led" class="led-off"></span>
+        <br>
+        <span class="inline label">OFF</span>
+        <input type="checkbox" class="toggle-switch">
+        <span class="inline label">ON</span>
+      </div>
+      <div id="footer">
+        Created by A G Dobbs
+      </div>
+    </div>
+    <script src="src/js/jquery-3.2.1.min.js"></script>
+    <script src="src/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="src/js/simongame.js"></script>
+  </body>
+</html>
